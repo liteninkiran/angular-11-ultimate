@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminModule } from './admin/admin.module';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AdminModule } from './admin/admin.module';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import { AdminModule } from './admin/admin.module';
         BrowserModule,
         AppRoutingModule,
         AdminModule,
+        HttpClientModule,
     ],
     providers: [
 
